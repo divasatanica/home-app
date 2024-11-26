@@ -22,8 +22,7 @@ func GenerateMenuNode(title: String, children: [MenuNode], image: String?) -> Me
 
 
 let GlobalMenu = [
-    GenerateMenuNode(
-        title: "Dashboard", children:[], image: "house"),
+    GenerateMenuNode(title: "Dashboard", children:[], image: "house"),
     GenerateMenuNode(title: "Devices", children: [], image: "externaldrive.fill.badge.wifi"),
     GenerateMenuNode(title: "Users", children: [], image: "person.fill")
 ];

@@ -12,8 +12,15 @@ struct RouteView: View {
         switch menuTitle {
         case "Dashboard":
             Dashboard(buttonText: "Try it out");
+        case "Devices":
+            DeviceIndex();
         default:
-            Text("No route for \(menuTitle)");
+            VStack {
+                Text("No route for \(menuTitle)")
+                    .font(.largeTitle.bold())
+                    .multilineTextAlignment(.center)
+            }
+            
         }
     }
 }

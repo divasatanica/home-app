@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		049FAEE12CF5CEB200290952 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 049FAEE02CF5CEB200290952 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		04EBBF162C9EF76C0053D9EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,15 +27,41 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		049FAED92CF5CD4600290952 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		04EBBF022C9EF76A0053D9EE /* Local.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Local.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EBBF152C9EF76C0053D9EE /* LocalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EBBF1F2C9EF76C0053D9EE /* LocalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		049FAEE32CF5D04900290952 /* Exceptions for "Local" folder in "Local" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 04EBBF012C9EF76A0053D9EE /* Local */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		04EBBF042C9EF76A0053D9EE /* Local */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				049FAEE32CF5D04900290952 /* Exceptions for "Local" folder in "Local" target */,
+			);
 			path = Local;
 			sourceTree = "<group>";
 		};
@@ -52,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049FAEE12CF5CEB200290952 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +133,7 @@
 				04EBBEFE2C9EF76A0053D9EE /* Sources */,
 				04EBBEFF2C9EF76A0053D9EE /* Frameworks */,
 				04EBBF002C9EF76A0053D9EE /* Resources */,
+				049FAED92CF5CD4600290952 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -112,6 +144,7 @@
 			);
 			name = Local;
 			packageProductDependencies = (
+				049FAEE02CF5CEB200290952 /* Alamofire */,
 			);
 			productName = Local;
 			productReference = 04EBBF022C9EF76A0053D9EE /* Local.app */;
@@ -195,6 +228,9 @@
 			);
 			mainGroup = 04EBBEF92C9EF76A0053D9EE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				049FAEDF2CF5CEB200290952 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 04EBBF032C9EF76A0053D9EE /* Products */;
 			projectDirPath = "";
@@ -400,6 +436,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Local/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -442,6 +479,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Local/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -603,6 +641,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		049FAEDF2CF5CEB200290952 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		049FAEE02CF5CEB200290952 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 049FAEDF2CF5CEB200290952 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04EBBEFA2C9EF76A0053D9EE /* Project object */;
 }

@@ -17,9 +17,8 @@ struct RootView: View {
                     ScrollView {
                         VStack {
                             RouteView(menuTitle: FirstLevelMenu.title)
-                                
                         }
-                    }.navigationTitle(FirstLevelMenu.title);
+                    }.padding(.top, 20)
                 }.tabItem {
                     Text(FirstLevelMenu.title);
                     Image(systemName: FirstLevelMenu.image!);

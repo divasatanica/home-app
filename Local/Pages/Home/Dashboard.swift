@@ -10,7 +10,6 @@ import SwiftUI
 struct Dashboard: View {
     let buttonText: String;
     var activities = ["Archery", "Baseball", "Basketball", "Bowling", "Boxing", "Cricket", "Curling", "Fencing", "Golf", "Hiking", "Lacrosse", "Rugby", "Squash"]
-    var colors: [Color] = [.blue, .cyan, .gray, .green, .indigo, .mint, .orange, .pink, .purple, .red]
 
     @State private var selected = "Rugby"
     @State private var id = 1;
@@ -18,8 +17,8 @@ struct Dashboard: View {
         VStack {
             VStack {
                 Circle()
-                    .fill(colors.randomElement() ?? .blue)
-                    .padding()
+                    .fill(RandomColors.randomElement() ?? .blue)
+                    .padding(80)
                     .overlay(
                         Image(systemName: "figure.\(selected.lowercased())")
                             .font(.system(size: 144))
